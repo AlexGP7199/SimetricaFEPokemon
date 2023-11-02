@@ -23,17 +23,20 @@ export class PokemonInfoCardComponent {
   public urlPoke : string = "";
   public isAFavPoke : boolean = false;
   public noOrder : number = 0;
+  //private order : number =0;
   constructor(private pokeServ : PokeService) {
   }
 
 
   ngOnInit(): void {
-    this.isAFavPoke = this.pokeServ.validateIsAFav(this.pokemon.name);
+
 
     this.pokeServ.getPokemonInfo(this.pokemon.name).subscribe({
       next : (res : PokemonInfo) => {
         this.noOrder= res.order;
-        this.urlPoke= res.sprites.front_default
+        this.isAFavPoke = this.pokeServ.validateIsAFav(this.noOrder);
+        this.urlPoke= res.sprites.front_default;
+        //this.order = res.order;
         //console.log(this.urlPoke);
       }
     })
@@ -53,8 +56,9 @@ export class PokemonInfoCardComponent {
         //const date = new Date()
         //let fechaFormted = new Date(format(date, 'dd-MMM-yyyy'));
         let favPoke : Favorito = {
+          id : this.noOrder,
           name : name,
-          alias : "",
+          alias : "Sin Apodo",
           createdAt : new Date(),
           url : this.urlPoke
         }

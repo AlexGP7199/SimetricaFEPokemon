@@ -50,7 +50,7 @@ margin-top: 2rem;
 background: rgb(255, 255, 255);
 color: black;
 font-size: 2rem;
-display: block;
+display: flex;
 }
 .page__content-data {
   top: 50%;

@@ -1,8 +1,7 @@
 .example-card {
-  display: flex;
+
   max-width: 400px;
   box-shadow: 0 0 10px rgba(185, 184, 184, 0.904);
-
 }
 .imgP{
   padding: 2rem;

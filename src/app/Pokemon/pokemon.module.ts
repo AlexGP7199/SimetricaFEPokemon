@@ -2,7 +2,7 @@ import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 
 import { PokemonRoutingModule } from './pokemon-routing.module';
-import { PokemonPageComponent } from './pages/pages.component';
+
 import { HeaderModule } from './components/header/header.module';
 import { SideNavModule } from './components/side-nav/side-nav.module';
 import { SharedModule } from './shared/shared.module';
@@ -18,7 +18,7 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
-    PokemonPageComponent,
+
     PokemonInfoCardComponent,
     PokemonFavCardComponent,
     PokemonListComponent,
@@ -37,7 +37,6 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
   ],
   exports : [
-    PokemonPageComponent,
     SideNavModule,
     SharedModule,
     HttpClientModule,

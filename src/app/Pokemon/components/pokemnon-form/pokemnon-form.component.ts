@@ -20,6 +20,7 @@ export class PokemnonFormComponent implements OnInit {
   ngOnInit(): void {
 
     this.pokeFavForm = this.formBuilder.group({
+      id : [this.editData.id],
       name : ['', Validators.required],
       createdAt : ['', Validators.required],
       alias : ['', Validators.required],

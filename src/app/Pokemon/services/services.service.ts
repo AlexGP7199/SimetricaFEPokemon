@@ -22,7 +22,7 @@ export class PokeService {
   updateFavPokemon(data : Favorito){
     for(let i = 0; i < this.pokeFav.length; i++){
       console.log(this.pokeFav[i]);
-      if(data.name == this.pokeFav[i].name){
+      if(data.id == this.pokeFav[i].id){
         console.log(this.pokeFav[i]);
         this.pokeFav[i].alias = data.alias;
         const pokeFavToStorage = JSON.stringify(this.pokeFav);
@@ -34,7 +34,7 @@ export class PokeService {
   removeFavPokemon(pokemon : Favorito){
     for(let i = 0; i < this.pokeFav.length; i++){
       console.log(this.pokeFav[i]);
-      if(pokemon.name == this.pokeFav[i].name){
+      if(pokemon.id == this.pokeFav[i].id){
         //console.log(this.pokeFav[i]);
         this.pokeFav.splice(i,1);
         const pokeFavToStorage = JSON.stringify(this.pokeFav);
@@ -65,9 +65,9 @@ export class PokeService {
     console.log(favoritos);
    }
 
-   validateIsAFav(name: string):boolean{
+   validateIsAFav(id: number):boolean{
       for(let i = 0; i<this.pokeFav.length; i++){
-          if(this.pokeFav[i].name == name){
+          if(this.pokeFav[i].id == id){
             return true;
           }
       }return false;
