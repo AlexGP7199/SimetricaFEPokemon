@@ -1,0 +1,54 @@
+
+.seccion{
+  text-align: center;
+  background-color: #f1f1f1;
+  margin: 0px;
+}
+.optionList{
+  background-color: #303030;
+}
+.logo {
+  text-align: center;
+  padding: 2.6rem 1rem;
+
+}
+.logo img {
+  width: 100px;
+}
+.mat-divider {
+  border-top-width: 2px;
+  border-color: rgb(247, 0, 0);
+}
+.mat-list-item {
+  background-color: #ffffff !important;
+  font-size: 0.8rem;
+  height: 44px !important;
+  margin-bottom: 4px;
+}
+
+.mat-list-item:hover {
+  color: #f2f5f7 !important;
+}
+.mat-list-item ::ng-deep .mat-list-item-content {
+  border-radius: 5px;
+  margin: 0 8px;
+}
+
+.mat-list-item ::ng-deep .mat-list-item-content:hover {
+  background: #ff0202 !important;
+}
+.list-item-active {
+  color: #f2f5f7 !important;
+}
+.list-item-active ::ng-deep .mat-list-item-content {
+  background: #ffffff !important;
+}
+.list-item-active ::ng-deep .mat-list-item-content:hover {
+  background: #ffffff !important;
+}
+.mat-subheader {
+  color: #ffffff;
+  font-size: 0.6rem;
+  font-weight: 100;
+  letter-spacing: 1px;
+}

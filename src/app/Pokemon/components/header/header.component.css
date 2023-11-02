@@ -1,0 +1,58 @@
+mat-toolbar {
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  width: 100%;
+}
+ul li {
+  list-style: none;
+}
+button {
+  outline: none;
+  border: 0;
+  background: transparent;
+  background-color: rgb(255, 255, 255);
+}
+.user {
+  font-size: 14px;
+}
+mat-toolbar {
+  background: #fffefe;
+}
+
+.user-image {
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  margin-right: 1rem;
+  padding: 0.5rem;
+}
+
+.user-image-icon {
+  height: 18px;
+  font-size: 16px;
+  margin-left: 1rem;
+}
+
+.row1{
+  display: flex;
+  margin-right: 2rem;
+  margin-left: auto;
+}
+.row2 {
+  display: flex; /* Convierte el contenedor en un contenedor flexbox */
+  margin: 0; /* Elimina los márgenes */
+  align-items: center; /* Alinea verticalmente los elementos en el centro */
+}
+.eButtom {
+  margin-top: 2rem; /* Margen superior de tamaño mediano (ajusta según tus necesidades) */
+  display: flex; /* Convierte el elemento en un contenedor flexbox */
+  align-items: center; /* Alinea los elementos verticalmente en el centro */
+}
+.image1 {
+  margin-right: 1rem; /* Margen derecho de 1 unidad (ajusta según tus necesidades) */
+  padding: 0.5rem; /* Relleno de 0.5 unidades en todas las direcciones (ajusta según tus necesidades) */
+}
+
+
+

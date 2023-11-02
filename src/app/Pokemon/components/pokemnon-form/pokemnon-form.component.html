@@ -1,0 +1,33 @@
+<div class="container-title">
+  <h1 class="pokeDialog" mat-dialog-title>Pokemon</h1>
+</div>
+<div class="dialog-content">
+  <div class="form-container">
+    <form class="example-form" [formGroup]="pokeFavForm">
+      <mat-form-field class="example-full-width">
+        <mat-label>Nombre</mat-label>
+        <input matInput formControlName="name">
+      </mat-form-field>
+      <mat-form-field class="example-full-width">
+        <mat-label>CreatedAt</mat-label>
+        <input matInput formControlName="createdAt">
+      </mat-form-field>
+      <mat-form-field class="example-full-width">
+        <mat-label>Alias</mat-label>
+        <input matInput formControlName="alias" maxlength="10" #alias>
+        <mat-hint align="end">{{alias.value.length}}/10</mat-hint>
+      </mat-form-field>
+      <p>
+      </p>
+    </form>
+  </div>
+  <div class="image-container">
+    <img [src]="this.editData.url" alt="Imagen" class="dialog-image">
+  </div>
+</div>
+
+<mat-dialog-actions align="end">
+  <button mat-button (click)="closeF()">Cancel</button>
+  <button mat-raised-button color="primary"(click) ="updateForm()" class="btn btn-primary">Actualizar</button>
+</mat-dialog-actions>
+

@@ -1,0 +1,45 @@
+.example-form {
+  min-width: 200px;
+  max-width: auto;
+  width: 100%;
+}
+
+.example-full-width {
+  width: 100%;
+}
+
+.dialog-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.form-container {
+  flex: 1;
+  padding: 16px; /* Espaciado para el formulario */
+}
+
+.image-container {
+  display: flex;
+  padding: 16px; /* Espaciado para la imagen */
+  justify-content: center;
+  align-items: center;
+}
+
+.dialog-image {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 100%;
+  height: auto;
+}
+
+.container-title{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #f95959;
+}
+.pokeDialog{
+  color: white;
+}

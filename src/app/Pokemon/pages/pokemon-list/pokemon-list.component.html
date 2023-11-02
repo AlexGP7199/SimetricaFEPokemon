@@ -1,0 +1,38 @@
+<mat-drawer-container>
+    <mat-drawer mode="side" [opened]="sideBarOpen">
+      <app-side-nav>
+      </app-side-nav>
+    </mat-drawer>
+    <mat-drawer-content>
+      <app-header class="headerZ"(toggleSidebarForMe)="sideBarToggler()"></app-header>
+      <div class="page">
+        <div class="page__box">Pokemon's</div>
+        <div class="page__content">
+          <h1>Pagina: {{actualPage}} / {{totalPage}} </h1>
+          <div class="container">
+            <div class="row">
+              <div class="col-3" *ngFor="let pokemon of pokemonList; let i = index">
+                <app-pokemon-info-card (favPokemonName)="saveInFavPoke($event)" [pokemon]="pokemon"></app-pokemon-info-card>
+                <div *ngIf="(i + 1) % 4 === 0" class="w-100 d-none d-md-block">
+                  <p></p>
+                </div>
+              </div>
+
+            </div>
+
+          </div>
+          <div class="botones-flotantes">
+            <button mat-fab color="warn" (click)="prevPage()">
+              <mat-icon>fast_rewind</mat-icon>
+            </button>
+            <button mat-fab color="warn" (click)="nextPage()">
+              <mat-icon>fast_forward</mat-icon>
+            </button>
+          </div>
+        </div>
+
+      </div>
+
+    </mat-drawer-content>
+  </mat-drawer-container>
+

@@ -1,0 +1,75 @@
+mat-drawer {
+  display: flex;
+  width: 260px;
+  background: #ffffff;
+}
+mat-drawer-container {
+  height: 100%;
+  width: 100%;
+}
+
+.headerZ{
+  display: flex;
+  width: auto;
+}
+.page {
+  width: auto;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+  color: white;
+  padding: 0 1rem;
+  background: #f1f5f9;
+}
+.page__box {
+  display: flex; /* Convierte el elemento en un contenedor flexbox */
+  padding: 2rem; /* Relleno de 1 unidad en todas las direcciones (ajusta según tus necesidades) */
+  margin-top: 2rem; /* Margen superior de 2 unidades (ajusta según tus necesidades) */
+  min-height: 90px;
+  background: #f95959;
+  margin:-1rem;
+  font-size: 36px;
+}
+.page__content {
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    padding: 2rem;
+    position: relative;
+    min-height: calc(100vh - 220px);
+    border-radius: 10px;
+    margin-top: -1rem;
+    background: white;
+    color: black;
+    font-size: 2rem;
+}
+.page__content_detail {
+min-height: calc(55vh - 178px);
+border-radius: 15px;
+border-color: aqua;
+margin-top: 2rem;
+background: rgb(255, 255, 255);
+color: black;
+font-size: 2rem;
+display: block;
+}
+.page__content-data {
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.botones-flotantes {
+  position: fixed;
+  top: 20px; /* Ajusta la posición vertical según tus necesidades */
+  right: 20px; /* Ajusta la posición horizontal según tus necesidades */
+  bottom: 20px; /* Asegura que estén en la parte superior */
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: end;
+}
+
+.botones-flotantes button {
+  margin-left: 10px; /* Espacio entre los botones */
+}
+

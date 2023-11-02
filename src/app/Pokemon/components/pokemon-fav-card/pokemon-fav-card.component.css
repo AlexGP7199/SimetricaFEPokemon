@@ -1,0 +1,32 @@
+.example-card {
+  display: flex;
+  max-width: 400px;
+  box-shadow: 0 0 10px rgba(185, 184, 184, 0.904);
+
+}
+.imgP{
+  padding: 2rem;
+}
+mat-card-title{
+  font-size: 19px;
+}
+mat-divider{
+  border-color: red;
+}
+.contentPoke{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0rem;
+  font-size: 25px;
+}
+.example-header-image {
+  background-size: cover;
+}
+.likeB{
+  display: flex;
+  justify-content: flex-end;
+}
+
+
+
