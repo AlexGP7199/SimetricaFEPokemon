@@ -9,10 +9,10 @@
         <div class="page__box">Pokemon's</div>
         <div class="page__content">
           <h1>Pagina: {{actualPage}} / {{totalPage}} </h1>
-          <div class="container">
-            <div class="row">
+          <div class="container" style=" display: flex; flex-wrap: wrap">
+            <div class="row" style=" display: flex; flex-wrap: wrap">
               <div class="col-3" *ngFor="let pokemon of pokemonList; let i = index">
-                <app-pokemon-info-card (favPokemonName)="saveInFavPoke($event)" [pokemon]="pokemon"></app-pokemon-info-card>
+                <app-pokemon-info-card (favPokemonName)="saveInFavPoke($event)" [pokemon]="pokemon"></app-pokemon-info-card >
                 <div *ngIf="(i + 1) % 4 === 0" class="w-100 d-none d-md-block">
                   <p></p>
                 </div>

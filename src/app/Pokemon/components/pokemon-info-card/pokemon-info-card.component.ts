@@ -19,9 +19,10 @@ export class PokemonInfoCardComponent {
 
 
 
-  private pokeDetail !: PokemonInfo;
+
   public urlPoke : string = "";
   public isAFavPoke : boolean = false;
+  public noOrder : number = 0;
   constructor(private pokeServ : PokeService) {
   }
 
@@ -31,7 +32,7 @@ export class PokemonInfoCardComponent {
 
     this.pokeServ.getPokemonInfo(this.pokemon.name).subscribe({
       next : (res : PokemonInfo) => {
-        this.pokeDetail = res;
+        this.noOrder= res.order;
         this.urlPoke= res.sprites.front_default
         //console.log(this.urlPoke);
       }
